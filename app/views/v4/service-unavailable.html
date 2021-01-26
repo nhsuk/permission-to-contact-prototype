@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% set version = "v4" %}
+{% set heading = "Sorry, the service is unavailable" %}
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block beforeMain %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading">{{ heading }}</h1>
+
+      <p>Please try again later or contact us to let us know there is a problem:</p>
+
+      <h2>By email</h2>
+
+      <p><a href="mailto:something@domain.com">something@domain.com</a></p>
+
+      <h2>By phone</h2>
+
+      <p>01234 567 8910 <br> Monday to Friday, 9am to 5pm excluding bank holidays</p>
+
+    </div>
+  </div>
+{% endblock %}

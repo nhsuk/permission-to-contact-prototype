@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% set version = "v4" %}
+{% set heading = "Sorry, your session has expired" %}
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block beforeMain %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-heading">{{ heading }}</h1>
+
+      <p>We can only hold your details for so long. Please start again.</p>
+
+      <a href="/{{ version }}/" class="nhsuk-button nhsuk-u-margin-bottom-7 nhsuk-u-margin-top-3">
+        Start again
+      </a>
+
+    </div>
+  </div>
+{% endblock %}
